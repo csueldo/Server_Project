@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body{
-  font-family: "DIN Next W01", sans-serif !important;
+  font-family: 'Dosis', sans-serif !important;
   margin: 0;
 }
 h1 {
@@ -54,6 +54,14 @@ h1 {
 }
 .wallet-jpg {
   background-image: url("/images/home-wallet.jpg");
+  min-height: 703px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.goldwatch-jpg {
+  background-image: url("/images/home-goldwatch.jpg");
   min-height: 703px;
   background-attachment: fixed;
   background-position: center;
