@@ -14,24 +14,26 @@
 
 <body>
 
-
+    <!-- bootstrap navbar -->
     <nav class="navbar navbar-default navbar-fixed-top opaque-navbar">
         <div class="container-fluid">
             <div class="navbar-header">
+                <!--button for mobile view navbar -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--logo nav bar -->
                 <img src="/images/grovemade_logo_white.png" style="cursor: pointer" class="navbar-brands" ui-sref="home" />
-                <!-- <a class="navbar-brand" href="#">GROVEMADE</a> -->
             </div>
+            <!--navbar links -->
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav nav-navbar">
-                    <li><a ui-sref="shop">SHOP</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">JOURNAL</a></li>
-                    <li><a href="#">NEWSLETTER</a></li>
+                    <li style="cursor: pointer"><a ui-sref="shop">SHOP</a></li>
+                    <li style="cursor: pointer"><a href="#">ABOUT</a></li>
+                    <li style="cursor: pointer"><a href="#">JOURNAL</a></li>
+                    <li style="cursor: pointer"><a href="#">NEWSLETTER</a></li>
                 </ul>
             </div>
         </div>
@@ -125,6 +127,8 @@
         </div>
 
     </ui-view>
+
+    <!--footer-->
     <footer class="text-center">
         <a class="up-arrow" href="#" data-toggle="tooltip">
             <span class="glyphicon glyphicon-chevron-up"></span>
@@ -142,25 +146,26 @@
     <!-- Angular UI-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
     <!--app.js-->
-    <script src="app/app.js"></script>
+    <script src="app.js"></script>
     <!--javascript for up arrow footer -->
     <script>
-    $('a.up-arrow').click(function() {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 1300);
-        return false;
-    });
-</script>
-<script>
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 80) /*height in pixels when the navbar becomes non opaque*/ {
-            $('.opaque-navbar').addClass('opaque');
-        } else {
-            $('.opaque-navbar').removeClass('opaque');
-        }
-    });
-</script>
+        $('a.up-arrow').click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1300);
+            return false;
+        });
+    </script>
+    <!--javascript for navbar translucent to solid -->
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 80) /*height in pixels when the navbar becomes non opaque*/ {
+                $('.opaque-navbar').addClass('opaque');
+            } else {
+                $('.opaque-navbar').removeClass('opaque');
+            }
+        });
+    </script>
 </body>
 
 </html>

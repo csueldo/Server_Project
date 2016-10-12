@@ -7,6 +7,7 @@
     font-size: 14px;
     letter-spacing: 4px;
 }
+/* Navbar Transforms Transparent to Solid */
 .opaque-navbar {
     background-color: transparent !important;
   /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
