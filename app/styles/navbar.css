@@ -2,25 +2,38 @@
 .navbar {
     margin-bottom: 0;
     height: 60px;
-    background-color: #4a4d51 !important;
+    background-color: transparent !important;
     border: 0;
-    font-size: 11px !important;
+    font-size: 14px;
     letter-spacing: 4px;
     opacity:0.9;
 }
 
 /* Add a gray color to all navbar links */
-.navbar li a, .navbar .navbar-brand {
-    color: #d5d5d5 !important;
+.navbar li a, .navbar {
+    color: white !important;
+}
+.nav>li {
+  display: inline-block !important;
+}
+
+.navbar-brands {
+  height: 52px;
+  padding: 14px;
+  margin-top: 25px;
+  margin-left: 25px;
 }
 
 /* On hover, the links will turn white */
-.navbar-nav li a:hover {
-    color: #fff !important;
+.nav-navbar li a:hover {
+    color: blue !important;
 }
-
+.nav-navbar{
+  margin-top: 30px;
+  text-align: center !important;
+}
 /* The active link */
-.navbar-nav li.active a {
+.nav-navbar li.active a {
     color: #fff !important;
     background-color:#29292c !important;
 }
@@ -28,4 +41,13 @@
 /* Remove border color from the collapsible button */
 .navbar-default .navbar-toggle {
     border-color: transparent;
+}
+.navbar-default {
+  border-color: transparent !important;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #555 !important;
 }

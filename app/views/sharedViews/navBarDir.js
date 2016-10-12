@@ -1,7 +1,7 @@
 angular.module('eCommerceApp')
 
-.directive('navbar', function(){
+.directive('navigationbar', function(){
   return {
-    templateUrl: "/sharedViews/navBar.html"
+    templateUrl:
   };
 })

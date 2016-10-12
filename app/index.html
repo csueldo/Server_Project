@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 
 <head>
     <link rel="stylesheet" href="styles/style.css" media="screen" title="no title">
@@ -22,11 +22,12 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-                <a class="navbar-brand" href="#">GROVEMADE</a>
+                <img src="/images/grovemade_logo_white.png" style="cursor: pointer" class="navbar-brands" ui-sref="home" />
+                <!-- <a class="navbar-brand" href="#">GROVEMADE</a> -->
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">SHOP</a></li>
+                <ul class="nav nav-navbar">
+                    <li><a ui-sref="shop">SHOP</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">JOURNAL</a></li>
                     <li><a href="#">NEWSLETTER</a></li>
@@ -34,47 +35,70 @@
             </div>
         </div>
     </nav>
+
+    <ui-view>
+
     <!-- CAROUSEL -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
+        <!-- <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol> -->
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <img src="/images/home-walletcase.jpg" alt="Wallet Case">
                 <div class="carousel-caption">
-                    <h2>WALLET CASE</h2>
-                    <p>FOR iPHONE 6 & 7</p>
+                    <h2 class="h-size">WALLET CASE</h2>
+                    <p class="p-size">FOR iPHONE 6 & 7</p>
+                    <button type="button" id="shopnow-button">SHOP NOW</button>
                 </div>
             </div>
-
+            <div class="item">
+                <img src="/images/home-woodiphone.jpg" alt="Wood Speakers">
+                <div class="carousel-caption">
+                    <h2 class="h-size">iPHONE 7 CASES</h2>
+                    <p class="p-size">IN WALNUT AND MAPLE</p>
+                    <button type="button" id="shopnow-button">SHOP NOW</button>
+                </div>
+            </div>
             <div class="item">
                 <img src="/images/home-walnutdesk.jpg" alt="Walnut Desk">
                 <div class="carousel-caption">
-                    <h2>DESK COLLECTION</h2>
-                    <p>IN WALNUT AND MAPLE</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="/images/home-woodknife.jpg" alt="WoodKnife">
-                <div class="carousel-caption">
-                    <h2>POCKET KNIFE</h2>
-                    <p>IN WALNUT AND MAPLE</p>
+                    <h2 class="h-size">DESK COLLECTION</h2>
+                    <p class="p-size">IN WALNUT AND MAPLE</p>
+                    <button type="button" id="shopnow-button">SHOP NOW</button>
                 </div>
             </div>
             <div class="item">
                 <img src="/images/home-woodspeakers.jpg" alt="Wood Speakers">
                 <div class="carousel-caption">
-                    <h3>WOOD SPEAKERS</h3>
-                    <p>Even though the traffic was a mess, we had the best time.</p>
+                    <h2 class="h-size">WOOD SPEAKERS</h2>
+                    <p class="p-size">IN WALNUT AND MAPLE</p>
+                    <button type="button" id="shopnow-button">SHOP NOW</button>
                 </div>
             </div>
+            <div class="item">
+                <img src="/images/home-woodknife.jpg" alt="WoodKnife">
+                <div class="carousel-caption">
+                    <h2 class="h-size">POCKET KNIFE</h2>
+                    <p class="p-size">IN WALNUT AND MAPLE</p>
+                    <button type="button" id="shopnow-button">SHOP NOW</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/home-wallet.jpg" alt="Wood Speakers">
+                <div class="carousel-caption">
+                    <h2 class="h-size">EVERYDAY CARRY</h2>
+                    <p class="p-size">COLLECTION</p>
+                    <button type="button" id="shopnow-button">SHOP NOW</button>
+                </div>
+            </div>
+
         </div>
 
         <!-- Left and right controls -->
@@ -88,6 +112,7 @@
         </a>
     </div>
 
+  </ui-view>
     <footer class="text-center">
         <a class="up-arrow" href="#" data-toggle="tooltip">
             <span class="glyphicon glyphicon-chevron-up"></span>
@@ -100,8 +125,11 @@
 
 
     <!--ALL SCRIPTS -->
-    <script src="app.js"></script>
-    <script src="/app/sharedViews/navBarDir.js"></script>
+    <!--Angular Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <!-- Angular UI-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="app/app.js"></script>
     <!--javascript for up arrow footer -->
     <script>
         $(document).ready(function() {
@@ -109,22 +137,6 @@
             $('[data-toggle="tooltip"]').tooltip();
         })
     </script>
-    <!-- <script>
-    var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 20000); // Change image every 2 seconds
-}
-</script> -->
 
 </body>
 
