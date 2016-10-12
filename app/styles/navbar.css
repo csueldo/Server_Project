@@ -1,12 +1,24 @@
 /* Add a dark background color with a little bit see-through */
 .navbar {
     margin-bottom: 0;
-    height: 60px;
-    background-color: transparent !important;
+    height: 65px !important;
+    /*background-color: transparent;*/
     border: 0;
     font-size: 14px;
     letter-spacing: 4px;
-    opacity:0.9;
+}
+.opaque-navbar {
+    background-color: transparent !important;
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 60px;
+    border-bottom: 0px;
+    transition: .1s ease 0s;
+}
+
+.opaque-navbar.opaque {
+    background-color: #424242 !important;
+    height: 60px;
+    transition: .5s ease 0s;
 }
 
 /* Add a gray color to all navbar links */
@@ -20,8 +32,8 @@
 .navbar-brands {
   height: 52px;
   padding: 14px;
-  margin-top: 25px;
-  margin-left: 25px;
+  margin-top: 18px;
+  margin-left: 28px;
 }
 
 /* On hover, the links will turn white */
@@ -29,7 +41,7 @@
     color: blue !important;
 }
 .nav-navbar{
-  margin-top: 30px;
+  margin-top: 22px;
   text-align: center !important;
 }
 /* The active link */
