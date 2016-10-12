@@ -1,0 +1,16 @@
+.shopcover-jpg {
+  background-image: url("/images/shop/shop-cover.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.shopheader {
+  height: 400px;
+}
+.he {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}

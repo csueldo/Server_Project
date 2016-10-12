@@ -5,6 +5,10 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" media="screen" title="no title">
     <link rel="stylesheet" href="styles/navbar.css" media="screen" title="no title">
+    <link rel="stylesheet" href="styles/shop.css" media="screen" title="no title">
+    <link rel="stylesheet" href="styles/about.css" media="screen" title="no title">
+    <link rel="stylesheet" href="styles/journal.css" media="screen" title="no title">
+    <link rel="stylesheet" href="styles/newsletter.css" media="screen" title="no title">
     <meta charset="utf-8">
     <title>Grovemade: Wooden IPhone Cases, Desk & Mac Accessories</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,130 +18,42 @@
 
 <body>
 
-    <!-- bootstrap navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top opaque-navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <!--button for mobile view navbar -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!--logo nav bar -->
-                <img src="/images/grovemade_logo_white.png" style="cursor: pointer" class="navbar-brands" ui-sref="home" />
-            </div>
-            <!--navbar links -->
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav nav-navbar">
-                    <li style="cursor: pointer"><a ui-sref="shop">SHOP</a></li>
-                    <li style="cursor: pointer"><a href="#">ABOUT</a></li>
-                    <li style="cursor: pointer"><a href="#">JOURNAL</a></li>
-                    <li style="cursor: pointer"><a href="#">NEWSLETTER</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- bootstrap navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top opaque-navbar">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <!--button for mobile view navbar -->
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <!--logo nav bar -->
+              <img src="/images/logo/grovemade_logo_white.png" style="cursor: pointer" class="navbar-brands" ui-sref="home" />
+          </div>
+          <!--navbar links -->
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav nav-navbar">
+                  <li style="cursor: pointer"><a ui-sref="shop">SHOP</a></li>
+                  <li style="cursor: pointer"><a ui-sref="about">ABOUT</a></li>
+                  <li style="cursor: pointer"><a ui-sref="journal">JOURNAL</a></li>
+                  <!-- <li style="cursor: pointer"><a ui-sref="newsletter">NEWSLETTER</a></li> -->
+              </ul>
+          </div>
+      </div>
+  </nav>
 
-    <ui-view>
+  <ui-view></ui-view>
 
-        <!-- CAROUSEL -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-                <li data-target="#myCarousel" data-slide-to="5"></li>
-                <li data-target="#myCarousel" data-slide-to="6"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <div class="walletcase-jpg"></div>
-                    <div class="carousel-caption">
-                        <h2 class="h-size">WALLET CASE</h2>
-                        <p class="p-size">FOR iPHONE 6 & 7</p>
-                        <button type="button" id="shopnow-button">SHOP NOW</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="woodiphone-jpg"></div>
-                    <div class="carousel-caption">
-                        <h2 class="h-size">iPHONE 7 CASES</h2>
-                        <p class="p-size">IN WALNUT AND MAPLE</p>
-                        <button type="button" id="shopnow-button">SHOP NOW</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="walnutdesk-jpg"></div>
-                    <div class="carousel-caption">
-                        <h2 class="h-size">DESK COLLECTION</h2>
-                        <p class="p-size">IN WALNUT AND MAPLE</p>
-                        <button type="button" id="shopnow-button">SHOP NOW</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="woodspeakers-jpg"></div>
-                    <div class="carousel-caption">
-                        <h2 class="h-size">WOOD SPEAKERS</h2>
-                        <p class="p-size">IN WALNUT AND MAPLE</p>
-                        <button type="button" id="shopnow-button">SHOP NOW</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="woodknife-jpg"></div>
-                    <div class="carousel-caption">
-                        <h2 class="h-size">POCKET KNIFE</h2>
-                        <p class="p-size">IN WALNUT AND MAPLE</p>
-                        <button type="button" id="shopnow-button">SHOP NOW</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="wallet-jpg"></div>
-                    <div class="carousel-caption">
-                        <h2 class="h-size">EVERYDAY CARRY</h2>
-                        <p class="p-size">COLLECTION</p>
-                        <button type="button" id="shopnow-button">SHOP NOW</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="goldwatch-jpg"></div>
-                    <div class="carousel-caption">
-                        <h2 class="h-size">GOLD WATCH</h2>
-                        <p class="p-size">LIMITED EDITION OF 25</p>
-                        <button type="button" id="shopnow-button">SHOP NOW</button>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-
-    </ui-view>
-
-    <!--footer-->
-    <footer class="text-center">
-        <a class="up-arrow" href="#" data-toggle="tooltip">
-            <span class="glyphicon glyphicon-chevron-up"></span>
-        </a><br><br>
-        <p>
-            TO THE TOP
-        </p>
-    </footer>
-
+  <!--footer-->
+  <footer class="text-center">
+      <a class="up-arrow" href="#" data-toggle="tooltip">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+      </a><br><br>
+      <p>
+          TO THE TOP
+      </p>
+  </footer>
 
 
     <!--ALL MY SCRIPTS -->

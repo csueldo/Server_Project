@@ -39,17 +39,17 @@
 
 /* On hover, the links will turn white */
 .nav-navbar li a:hover {
-    color: blue !important;
+    color: white !important;
 }
 .nav-navbar{
   margin-top: 22px;
   text-align: center !important;
 }
 /* The active link */
-.nav-navbar li.active a {
-    color: #fff !important;
-    background-color:#29292c !important;
-}
+/*.nav-navbar li.active a {
+    color: red !important;
+    background-color:red !important;
+}*/
 
 /* Remove border color from the collapsible button */
 .navbar-default .navbar-toggle {

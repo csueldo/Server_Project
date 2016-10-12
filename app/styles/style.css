@@ -8,12 +8,12 @@ body{
   font-family: 'Dosis', sans-serif !important;
   margin: 0;
 }
-h1 {
+/*h1 {
   height: 900px;
-}
+}*/
 /* ROTAING IMAGES FIXED */
 .walletcase-jpg {
-  background-image: url("/images/home-walletcase.jpg");
+  background-image: url("/images/carousel/home-walletcase.jpg");
   min-height: 703px;
   background-attachment: fixed;
   background-position: center;
@@ -21,7 +21,7 @@ h1 {
   background-size: cover;
 }
 .woodiphone-jpg {
-  background-image: url("/images/home-woodiphone.jpg");
+  background-image: url("/images/carousel/home-woodiphone.jpg");
   min-height: 703px;
   background-attachment: fixed;
   background-position: center;
@@ -29,7 +29,7 @@ h1 {
   background-size: cover;
 }
 .walnutdesk-jpg {
-  background-image: url("/images/home-walnutdesk.jpg");
+  background-image: url("/images/carousel/home-walnutdesk.jpg");
   min-height: 703px;
   background-attachment: fixed;
   background-position: center;
@@ -37,7 +37,7 @@ h1 {
   background-size: cover;
 }
 .woodspeakers-jpg {
-  background-image: url("/images/home-woodspeakers.jpg");
+  background-image: url("/images/carousel/home-woodspeakers.jpg");
   min-height: 703px;
   background-attachment: fixed;
   background-position: center;
@@ -45,7 +45,7 @@ h1 {
   background-size: cover;
 }
 .woodknife-jpg {
-  background-image: url("/images/home-woodknife.jpg");
+  background-image: url("/images/carousel/home-woodknife.jpg");
   min-height: 703px;
   background-attachment: fixed;
   background-position: center;
@@ -53,7 +53,7 @@ h1 {
   background-size: cover;
 }
 .wallet-jpg {
-  background-image: url("/images/home-wallet.jpg");
+  background-image: url("/images/carousel/home-wallet.jpg");
   min-height: 703px;
   background-attachment: fixed;
   background-position: center;
@@ -61,7 +61,7 @@ h1 {
   background-size: cover;
 }
 .goldwatch-jpg {
-  background-image: url("/images/home-goldwatch.jpg");
+  background-image: url("/images/carousel/home-goldwatch.jpg");
   min-height: 703px;
   background-attachment: fixed;
   background-position: center;
