@@ -11,6 +11,55 @@ body{
 h1 {
   height: 900px;
 }
+/* ROTAING IMAGES FIXED */
+.walletcase-jpg {
+  background-image: url("/images/home-walletcase.jpg");
+  min-height: 703px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.woodiphone-jpg {
+  background-image: url("/images/home-woodiphone.jpg");
+  min-height: 703px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.walnutdesk-jpg {
+  background-image: url("/images/home-walnutdesk.jpg");
+  min-height: 703px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.woodspeakers-jpg {
+  background-image: url("/images/home-woodspeakers.jpg");
+  min-height: 703px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.woodknife-jpg {
+  background-image: url("/images/home-woodknife.jpg");
+  min-height: 703px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wallet-jpg {
+  background-image: url("/images/home-wallet.jpg");
+  min-height: 703px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* Add a dark background color to the footer */
 footer {
     background-color: #4a4d51;
@@ -27,13 +76,16 @@ footer a:hover {
     color: #777;
     text-decoration: none;
 }
+.carousel-inner{
+  height: 703px;
+}
 .h-size {
   font-size: 40px;
   line-height: 40px;
   letter-spacing: .10em;
 }
 .carousel-caption {
-  bottom: 30% !important;
+  top: 25% !important;
 }
 .p-size {
   font-size: 20px;
@@ -43,11 +95,11 @@ footer a:hover {
 }
 @media screen and (min-width: 768px){
   .carousel-caption {
-    bottom: 40% !important;
+    /*bottom: 30% !important;*/
     padding-bottom: 0 !important;
   }
 }
-@media screen and (min-width: 900px){
+@media screen and (min-width: 768px){
 .h-size {
   font-size: 90px;
   line-height: 90px;
