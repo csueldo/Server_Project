@@ -28,7 +28,9 @@
 .nav>li {
   display: inline-block !important;
 }
-
+.nav > li > a:hover{
+    background-color: transparent !important;
+}
 .navbar-brands {
   height: 52px;
   padding: 14px;

@@ -4,25 +4,38 @@ p {
 
 .aboutcover-jpg {
     background-image: url("/images/about/about-cover.jpg");
-    min-height: 400px;
+    height: 400px;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 100px;
 }
 
-.about-main {
-    height: 5900px;
-    width: 100%;
-    background-color: white;
+.about-title {
+    height: 160px;
+    width: 660px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: .4em;
+    padding-top: 50px;
 }
 
 .find-what-matters-container {
     height: 500px;
     width: 100%;
     /*background-color: lightgrey;*/
-    /*position: absolute;*/
     text-align: center;
+}
+
+.about-main {
+    height: 5900px;
+    width: 100%;
+    background-color: white;
 }
 
 .h-find-container {
@@ -100,7 +113,7 @@ p {
 }
 
 .about-p3 {
-    height: 200px;
+    height: 225px;
     width: 660px;
     text-align: center;
     margin: 0 auto;
@@ -111,7 +124,7 @@ p {
 }
 
 .about-p4 {
-    height: 355px;
+    height: 340px;
     width: 100%;
     text-align: center;
     margin: 0 auto;

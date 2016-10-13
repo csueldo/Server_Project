@@ -1,16 +1,28 @@
 .shopcover-jpg {
   background-image: url("/images/shop/shop-cover.jpg");
-  min-height: 400px;
+  height: 400px;
+  width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 100px;
 }
-.shopheader {
-  height: 400px;
+
+.shop-title {
+    height: 160px;
+    width: 660px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: .4em;
+    padding-top: 50px;
 }
-.he {
-  margin-left: 20%;
-  margin-right: 20%;
-  text-align: center;
+
+.shop-main {
+    height: 2000px;
+    width: 100%;
+    background-color: white;
 }
