@@ -2,7 +2,7 @@
 .navbar {
     font-family: 'Dosis', sans-serif !important;
     margin-bottom: 0;
-    height: 65px !important;
+    height: 70px !important;
     /*background-color: transparent;*/
     border: 0;
     font-size: 14px;
@@ -12,14 +12,12 @@
 .opaque-navbar {
     background-color: transparent !important;
   /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
-    height: 60px;
     border-bottom: 0px;
     transition: .1s ease 0s;
 }
 
 .opaque-navbar.opaque {
     background-color: #424242 !important;
-    height: 60px;
     transition: .5s ease 0s;
 }
 
