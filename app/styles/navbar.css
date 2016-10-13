@@ -1,5 +1,6 @@
 /* Add a dark background color with a little bit see-through */
 .navbar {
+    font-family: 'Dosis', sans-serif !important;
     margin-bottom: 0;
     height: 65px !important;
     /*background-color: transparent;*/
