@@ -28,7 +28,11 @@
 }
 
 /*-------------------------NG REPEAT CASES---------------------------*/
-
+.cases-row-container{
+  height: 440px;
+  width: 100%;
+  border: .1px solid black;
+}
 .cases-container{
     height: 269px;
     width: 90%;
@@ -41,10 +45,38 @@
     width: 269px;
     float: left;
     border: 1px solid red;
+    margin-left: 1em;
     position: relative;
+}
+.cases-wrap {
+  position: relative;
 }
 
 .cases-photos img {
+  max-width: 100%;
+  height: auto;
+}
+/*---------------------NG REPEAT DOCKS--------------------*/
+.docks-row-container{
+  height: 546px;
+  width: 100%;
+  border: 1px solid black;
+}
+.docks-container{
+  height: 368px;
+  width: 94%;
+  margin: 71px auto 0 auto;
+  outline: 1px solid blue;
+}
+.docks-photos{
+    height: 368px;
+    width: 368px;
+    float: left;
+    border: 1px solid red;
+    margin-left: 1.8em;
+    position: relative;
+}
+.docks-photos img {
   max-width: 100%;
   height: auto;
 }
@@ -54,12 +86,12 @@
   width: 100%;
   height: auto;
   position: absolute;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   top: 0;
 }
 
 .hidden-effect:hover {
   z-index: 4;
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }

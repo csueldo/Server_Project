@@ -5,18 +5,53 @@
     </div>
   </div>
   <main class="shop-main">
+    <!--                NG_REPEAT DARK CASES PODUCTS ROW 1   -->
+  <div class="cases-row-container">
     <div class="cases-container">
-      <div class="cases-photos">
-          <img 
-          src="/images/shop/cases/1-cases.jpg" alt=""
+      <div class="cases-photos" ng-repeat="darkCase in darkCases">
+        <div class="cases-wrap">
+          <img
+          ng-src="{{darkCase.case}}" alt=""
           />
           <img
           class="hidden-effect hidden-photo"
-          src="/images/shop/caseshover/1-caseshover.jpg" alt=""
+          ng-src="{{darkCase.hover}}" alt=""
           />
+        </div>
       </div>
     </div>
-
+  </div>
+    <!--              NG_REPEAT LIGHT CASES ROW 2     -->
+  <div class="cases-row-container">
+    <div class="cases-container">
+      <div class="cases-photos" ng-repeat="lightCase in lightCases">
+        <div class="cases-wrap">
+          <img
+          ng-src="{{lightCase.case}}" alt=""
+          />
+          <img
+          class="hidden-effect hidden-photo"
+          ng-src="{{lightCase.hover}}" alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="docks-row-container">
+    <div class="docks-container">
+      <div class="docks-photos" ng-repeat="dock in docks">
+        <div class="cases-wrap">
+          <img
+          ng-src="{{dock.dock}}" alt=""
+          />
+          <img
+          class="hidden-effect hidden-photo"
+          ng-src="{{dock.hover}}" alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
   </main>
 
 </div>

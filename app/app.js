@@ -9,11 +9,13 @@ angular.module( "myApp", [ 'ui.router' ] )
   })
   .state('shop', {
     url: '/shop' ,
-    templateUrl: '../views/shop/shop.html'
+    templateUrl: '../views/shop/shop.html' ,
+    controller: 'shopCtrl'
   })
   .state('about', {
     url: '/about' ,
-    templateUrl: '../views/about/about.html'
+    templateUrl: '../views/about/about.html' ,
+    controller: 'aboutCtrl'
   })
   .state('journal', {
     url: '/journal' ,
