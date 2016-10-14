@@ -22,7 +22,7 @@
 }
 
 .shop-main {
-    height: 3000px;
+    height: 3358px;
     width: 100%;
     background-color: white;
 }
@@ -31,20 +31,20 @@
 .cases-row-container{
   height: 440px;
   width: 100%;
-  border: .1px solid #f1f1f2;
+  border-bottom: 2px solid #f1f1f2;
 }
 .cases-container{
     height: 269px;
     width: 90%;
     margin: 4.5em auto;
-    outline: 1px solid blue;
+    /*outline: 1px solid blue;*/
 }
 
 .cases-photos{
     height: 269px;
     width: 269px;
     float: left;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     margin-left: 1em;
     position: relative;
 }
@@ -60,19 +60,19 @@
 .docks-row-container{
   height: 546px;
   width: 100%;
-  border: 1px solid #f1f1f2;
+  border-bottom: 2px solid #f1f1f2;
 }
 .docks-container{
   height: 368px;
   width: 94%;
   margin: 71px auto 0 auto;
-  outline: 1px solid blue;
+  /*outline: 1px solid blue;*/
 }
 .docks-photos{
     height: 368px;
     width: 368px;
     float: left;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     margin-left: 1.8em;
     position: relative;
 }
@@ -82,25 +82,73 @@
 }
 /*-------------------NG REPEAT SPEAKERS -----------------*/
 .speakers-row-container{
-  height: 742px;
+  height: 700px;
   width: 100%;
-  border: 1px solid #f1f1f2;
+  border-bottom: 2px solid #f1f1f2;
 }
 .speakers-container{
   height: 564px;
   width: 96%;
   margin: 71px auto 0 auto;
-  outline: 1px solid blue;
+  /*outline: 1px solid blue;*/
 }
 .speakers-photos{
     height: 564px;
     width: 564px;
     float: left;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     margin-left: 1.8em;
     position: relative;
 }
 .speakers-photos img {
+  max-width: 100%;
+  height: auto;
+}
+/*--------------------NG REPEAT Walnut STANDS------------------------------ */
+.stands-row-container{
+  height: 500px;
+  width: 100%;
+  border-bottom: 2px solid #f1f1f2;
+}
+.stands-container{
+  height: 368px;
+  width: 96%;
+  margin: 71px auto 0 auto;
+  /*outline: 1px solid blue;*/
+}
+.stands-photos{
+    height: 368px;
+    width: 368px;
+    float: left;
+    /*border: 1px solid red;*/
+    margin-left: 1.8em;
+    position: relative;
+}
+.stands-photos img {
+  max-width: 100%;
+  height: auto;
+}
+/*--------------------NG REPEAT ------------------------------ */
+.cups-row-container{
+  height: 386px;
+  width: 100%;
+  border-bottom: 2px solid #f1f1f2;
+}
+.cups-container{
+  height: 210px;
+  width: 96%;
+  margin: 71px auto 0 auto;
+  /*outline: 1px solid blue;*/
+}
+.cups-photos{
+    height: 210px;
+    width: 210px;
+    float: left;
+    /*border: 1px solid red;*/
+    margin-left: 1.8em;
+    position: relative;
+}
+.cups-photos img {
   max-width: 100%;
   height: auto;
 }
@@ -127,5 +175,5 @@
 .hidden-effect:hover {
   z-index: 4;
   opacity: 1;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }

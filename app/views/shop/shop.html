@@ -9,7 +9,7 @@
   <div class="cases-row-container">
     <div class="cases-container">
       <div class="cases-photos" ng-repeat="darkCase in darkCases">
-        <div class="cases-wrap">
+        <div class="cases-wrap" style="cursor: pointer">
           <img
           ng-src="{{darkCase.case}}" alt=""
           />
@@ -17,8 +17,8 @@
           <img
           ng-src="{{darkCase.hover}}" alt=""
           />
-            <h4>Case Walnut</h4>
-            <div class="hidden-add-word">$99 | ADD TO CART</div>
+            <h4>{{darkCase.title}}</h4>
+            <div class="hidden-add-word">{{darkCase.price}} | ADD TO CART</div>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@
   <div class="cases-row-container">
     <div class="cases-container">
       <div class="cases-photos" ng-repeat="lightCase in lightCases">
-        <div class="cases-wrap">
+        <div class="cases-wrap" style="cursor: pointer">
           <img
           ng-src="{{lightCase.case}}" alt=""
           />
@@ -36,8 +36,8 @@
           <img
           ng-src="{{lightCase.hover}}" alt=""
           />
-            <h4>Case Walnut</h4>
-            <div class="hidden-add-word">$99 | ADD TO CART</div>
+            <h4>{{lightCase.title}}</h4>
+            <div class="hidden-add-word">{{lightCase.price}} | ADD TO CART</div>
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@
   <div class="docks-row-container">
     <div class="docks-container">
       <div class="docks-photos" ng-repeat="dock in docks">
-        <div class="cases-wrap">
+        <div class="cases-wrap" style="cursor: pointer">
           <img
           ng-src="{{dock.dock}}" alt=""
           />
@@ -55,8 +55,8 @@
           <img
           ng-src="{{dock.hover}}" alt=""
           />
-            <h4>Case Walnut</h4>
-            <div class="hidden-add-word">$99 | ADD TO CART</div>
+            <h4>{{dock.title}}</h4>
+            <div class="hidden-add-word">{{dock.price}} | ADD TO CART</div>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@
   <div class="speakers-row-container">
     <div class="speakers-container">
       <div class="speakers-photos" ng-repeat="speaker in speakers">
-        <div class="cases-wrap">
+        <div class="cases-wrap" style="cursor: pointer">
           <img
           ng-src="{{speaker.speaker}}" alt=""
           />
@@ -74,8 +74,46 @@
           <img
           ng-src="{{speaker.speaker}}" alt=""
           />
-            <h4>Case Walnut</h4>
-            <div class="hidden-add-word">$99 | ADD TO CART</div>
+            <h4>{{speaker.title}}</h4>
+            <div class="hidden-add-word">{{speaker.price}} | ADD TO CART</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--                  NG-REPEAT STANDS        -->
+  <div class="stands-row-container">
+    <div class="stands-container">
+      <div class="stands-photos" ng-repeat="stand in stands">
+        <div class="cases-wrap" style="cursor: pointer">
+          <img
+          ng-src="{{stand.stand}}" alt=""
+          />
+          <div class="hidden-effect hidden-words hidden-photo">
+          <img
+          ng-src="{{stand.hover}}" alt=""
+          />
+            <h4>{{stand.title}}</h4>
+            <div class="hidden-add-word">{{stand.price}} | ADD TO CART</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--                  NG REPEAT WALLNUT CUPS      -->
+  <div class="cups-row-container">
+    <div class="cups-container">
+      <div class="cups-photos" ng-repeat="cup in cups">
+        <div class="cases-wrap" style="cursor: pointer">
+          <img
+          ng-src="{{cup.cup}}" alt=""
+          />
+          <div class="hidden-effect hidden-words hidden-photo">
+          <img
+          ng-src="{{cup.cup}}" alt=""
+          />
+            <h4>{{cup.title}}</h4>
+            <div class="hidden-add-word">{{cup.price}} | ADD TO CART</div>
           </div>
         </div>
       </div>
