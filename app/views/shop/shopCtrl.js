@@ -4,6 +4,7 @@ angular.module("myApp")
   $scope.darkCases = darkCases;
   $scope.lightCases = lightCases;
   $scope.docks = docks;
+  $scope.speakers = speakers;
 });
 
 var darkCases = [
@@ -56,5 +57,14 @@ var docks = [
   {
     "dock": "/images/shop/docks/1-docks3.jpg" ,
     "hover": "/images/shop/docks/1-dockshover3.jpg" ,
+  }
+];
+/*-------------------Docks---------------------*/
+var speakers = [
+  {
+    "speaker": "/images/shop/speakers/1-speakers.jpg" ,
+  } ,
+  {
+    "speaker": "/images/shop/speakers/1-speakers2.jpg" ,
   }
 ];

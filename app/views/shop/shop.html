@@ -13,10 +13,13 @@
           <img
           ng-src="{{darkCase.case}}" alt=""
           />
+          <div class="hidden-effect hidden-words hidden-photo">
           <img
-          class="hidden-effect hidden-photo"
           ng-src="{{darkCase.hover}}" alt=""
           />
+            <h4>Case Walnut</h4>
+            <div class="hidden-add-word">$99 | ADD TO CART</div>
+          </div>
         </div>
       </div>
     </div>
@@ -29,14 +32,18 @@
           <img
           ng-src="{{lightCase.case}}" alt=""
           />
+          <div class="hidden-effect hidden-words hidden-photo">
           <img
-          class="hidden-effect hidden-photo"
           ng-src="{{lightCase.hover}}" alt=""
           />
+            <h4>Case Walnut</h4>
+            <div class="hidden-add-word">$99 | ADD TO CART</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <!--              NG_REPEAT DOCKS ROW        -->
   <div class="docks-row-container">
     <div class="docks-container">
       <div class="docks-photos" ng-repeat="dock in docks">
@@ -44,10 +51,32 @@
           <img
           ng-src="{{dock.dock}}" alt=""
           />
+          <div class="hidden-effect hidden-words hidden-photo">
           <img
-          class="hidden-effect hidden-photo"
           ng-src="{{dock.hover}}" alt=""
           />
+            <h4>Case Walnut</h4>
+            <div class="hidden-add-word">$99 | ADD TO CART</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--            NG-REAPEAT SPEAKERS ROW  -->
+  <div class="speakers-row-container">
+    <div class="speakers-container">
+      <div class="speakers-photos" ng-repeat="speaker in speakers">
+        <div class="cases-wrap">
+          <img
+          ng-src="{{speaker.speaker}}" alt=""
+          />
+          <div class="hidden-effect hidden-words hidden-photo">
+          <img
+          ng-src="{{speaker.speaker}}" alt=""
+          />
+            <h4>Case Walnut</h4>
+            <div class="hidden-add-word">$99 | ADD TO CART</div>
+          </div>
         </div>
       </div>
     </div>

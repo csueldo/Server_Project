@@ -22,7 +22,7 @@
 }
 
 .shop-main {
-    height: 2000px;
+    height: 3000px;
     width: 100%;
     background-color: white;
 }
@@ -31,7 +31,7 @@
 .cases-row-container{
   height: 440px;
   width: 100%;
-  border: .1px solid black;
+  border: .1px solid #f1f1f2;
 }
 .cases-container{
     height: 269px;
@@ -60,7 +60,7 @@
 .docks-row-container{
   height: 546px;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #f1f1f2;
 }
 .docks-container{
   height: 368px;
@@ -80,6 +80,30 @@
   max-width: 100%;
   height: auto;
 }
+/*-------------------NG REPEAT SPEAKERS -----------------*/
+.speakers-row-container{
+  height: 742px;
+  width: 100%;
+  border: 1px solid #f1f1f2;
+}
+.speakers-container{
+  height: 564px;
+  width: 96%;
+  margin: 71px auto 0 auto;
+  outline: 1px solid blue;
+}
+.speakers-photos{
+    height: 564px;
+    width: 564px;
+    float: left;
+    border: 1px solid red;
+    margin-left: 1.8em;
+    position: relative;
+}
+.speakers-photos img {
+  max-width: 100%;
+  height: auto;
+}
 /*--------------------HIDDEN IMAGES ANIMATION------------------------------ */
 .hidden-photo {
   opacity: 0;
@@ -88,6 +112,16 @@
   position: absolute;
   /*border: 1px solid green;*/
   top: 0;
+}
+.hidden-words {
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  color: #494c51;
+  letter-spacing: .2em;
+}
+.hidden-add-word {
+  color: #939393;
 }
 
 .hidden-effect:hover {
