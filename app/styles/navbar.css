@@ -20,7 +20,14 @@
     background-color: #424242 !important;
     transition: .5s ease 0s;
 }
-
+#myNavbar{
+  padding: 20px 0 0 40%;
+}
+@media screen and (max-width: 768px){
+  #myNavbar{
+    padding: 20px 0 0 30%;
+  }
+}
 /* Add a gray color to all navbar links */
 .navbar li a, .navbar {
     color: white !important;
@@ -37,20 +44,6 @@
   margin-top: 18px;
   margin-left: 28px;
 }
-
-/* On hover, the links will turn white */
-.nav-navbar li a:hover {
-    color: white !important;
-}
-.nav-navbar{
-  margin-top: 22px;
-  text-align: center !important;
-}
-/* The active link */
-/*.nav-navbar li.active a {
-    color: red !important;
-    background-color:red !important;
-}*/
 
 /* Remove border color from the collapsible button */
 .navbar-default .navbar-toggle {

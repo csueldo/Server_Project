@@ -8,9 +8,7 @@ body{
   font-family: 'Dosis', sans-serif !important;
   margin: 0;
 }
-/*h1 {
-  height: 900px;
-}*/
+
 /* ROTAING IMAGES FIXED */
 .walletcase-jpg {
   background-image: url("/images/carousel/home-walletcase.jpg");
@@ -44,30 +42,22 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.woodknife-jpg {
+/*.woodknife-jpg {
   background-image: url("/images/carousel/home-woodknife.jpg");
   min-height: 703px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.wallet-jpg {
+}*/
+/*.wallet-jpg {
   background-image: url("/images/carousel/home-wallet.jpg");
   min-height: 703px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.goldwatch-jpg {
-  background-image: url("/images/carousel/home-goldwatch.jpg");
-  min-height: 703px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+}*/
 /* Add a dark background color to the footer */
 footer {
     font-family: 'Dosis', sans-serif;

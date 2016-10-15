@@ -1,9 +1,68 @@
 .walnut-wallet-cover{
   background-image: url("/images/products/walnut-wallet-cover.jpg");
+}
+.p-covers{
   height: 589px;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 100px;
+  padding-top: 190px;
+}
+.product-main{
+  height: 1000px;
+  width: 100%;
+  background-color: white;
+}
+.walnut-leather-cover{
+  background-image: url("/images/covers/walnut-leathercase-cover.jpg");
+}
+.walnut-case-cover{
+  background-image: url("/images/covers/walnutcase-cover.jpg");
+}
+.walnut-bumper-cover{
+  background-image: url("/images/covers/walnutbumper-cover.jpg");
+}
+.maple-wallet-cover{
+  background-image: url("/images/covers/maplewallet-cover.jpg");
+}
+.maple-leather-cover{
+  background-image: url("/images/covers/maple-leathercase-cover.jpg");
+}
+.maple-case-cover{
+  background-image: url("/images/covers/maplecase-cover.jpg");
+}
+.maple-bumper-cover{
+  background-image: url("/images/covers/maplebumper-cover.jpg");
+}
+/*------------------DOCKS-----------------*/
+.walnut-dock-cover{
+  background-image: url("/images/covers/walnutdock-cover.jpg");
+}
+.maple-dock-cover{
+  background-image: url("/images/covers/mapledock-cover.jpg");
+}
+.limited-dock-cover{
+  background-image: url("/images/covers/limiteddock-cover.jpg");
+}
+/*-----------------SPEAKERS-------------*/
+.walnut-speaker-cover{
+  background-image: url("/images/covers/walnutspeaker-cover.jpg");
+}
+.maple-speaker-cover{
+  background-image: url("/images/covers/maplespeaker-cover.jpg");
+}
+/*---------------STANDS-------------*/
+.stand-accessories{
+  background-image: url("/images/covers/walnutaccessories-cover.jpg");
+}
+/*--------------cups-------------*/
+.cup-cover{
+  background-image: url("/images/covers/cup-cover.jpg");
+}
+.planter-cover{
+  background-image: url("/images/covers/tallplanter-cover.jpg");
+}
+.lamp-cover{
+  background-image: url("/images/covers/lamp-cover.jpg");
 }
