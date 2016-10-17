@@ -21,6 +21,10 @@ angular.module( "myApp", [ 'ui.router' ] )
     url: '/journal' ,
     templateUrl: '../views/journal/journal.html' ,
   })
+  .state('cart', {
+    url: '/cart' ,
+    templateUrl: '../views/cart/cart.html' ,
+  })
   /*------------product views ---------------*/
   .state('walnut-wallet', {
     url:'/walnut-wallet' ,

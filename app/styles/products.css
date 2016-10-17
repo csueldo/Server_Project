@@ -1,6 +1,7 @@
 .walnut-wallet-cover{
   background-image: url("/images/products/walnut-wallet-cover.jpg");
 }
+
 .p-covers{
   height: 589px;
   width: 100%;
@@ -9,11 +10,133 @@
   background-repeat: no-repeat;
   padding-top: 190px;
 }
+
 .product-main{
-  height: 1000px;
+  height: 1329px;
   width: 100%;
   background-color: white;
 }
+
+.product-bar-container {
+  height: 114px;
+  width: 100%;
+  /*background-color: red;*/
+  position: relative;
+}
+
+.product-bar-info {
+  display: inline-block;
+  margin: 30px 0 0 100px;
+  width: 400px;
+  /*background-color: white;*/
+}
+#product-bar-title{
+  width: 100%;
+  display: inline-block;
+  font-size: 25px;
+  margin: 10px 0 0 0;
+}
+.product-bar-controls{
+  width: 350px;
+  display: inline-block;
+  margin: 30px 0 0 21%;
+  position: absolute;
+}
+
+.product-bar-buy {
+  background: #424242;
+  border: none;
+  color: white;
+  line-height: 55px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 0;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.product_container {
+  width: 100%;
+  height: 255px;
+  margin: 0;
+}
+
+#pc_left {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-color: #424242;
+}
+
+#pc_right {
+  float: right;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-color: #9aa8b1;
+}
+#pc_left2 {
+  background-color: #9aa8b1;
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+#pc_right2{
+  background-color: #424242;
+  float: right;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+
+.technical-specifications-container {
+  width: 100%;
+  height: 706px;
+  margin: 0;
+  border: 1px solid black;
+  background-color: #f8f8f9;
+}
+
+.technical-specifications-wrap {
+  width: 948px;
+  height: 506px;
+  margin: 100px auto;
+  background-color: #f8f8f9;
+}
+
+.product-specs_container {
+  width: 839px;
+  height: 506px;
+  background-color: #f8f8f9;
+  margin: 0 auto;
+}
+
+.product-specs_column {
+  height: 351px;
+  width: 50%;
+  float: left;
+  background-color: #f8f8f9;
+}
+.products-specs_column2{
+  height: 433px;
+  width: 50%;
+  float: right;
+  background-color: #f8f8f9;
+}
+#p-marg {
+  margin-bottom: 10px;
+}
+#h-products{
+  color: #9fa8be;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  letter-spacing: .2em;
+}
+
+
 .walnut-leather-cover{
   background-image: url("/images/covers/walnut-leathercase-cover.jpg");
 }

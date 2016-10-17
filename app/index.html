@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/about.css" media="screen" title="no title">
     <link rel="stylesheet" href="styles/journal.css" media="screen" title="no title">
     <link rel="stylesheet" href="styles/products.css" media="screen" title="no title">
+    <link rel="stylesheet" href="styles/cart.css" media="screen" title="no title">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Grovemade: Wooden IPhone Cases, Desk & Mac Accessories</title>
@@ -36,11 +37,16 @@
                   <li style="cursor: pointer"><a ui-sref="shop">SHOP</a></li>
                   <li style="cursor: pointer"><a ui-sref="about">ABOUT</a></li>
                   <li style="cursor: pointer"><a ui-sref="journal">JOURNAL</a></li>
-
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li style="cursor: pointer" ui-sref="cart"><a>CART</a></li>
               </ul>
           </div>
+
       </div>
   </nav>
+
+
 
   <ui-view></ui-view>
 
@@ -61,6 +67,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
+    <!-- <script src="/views/sharedViews/navBarDir.js"></script> -->
     <script src="mainCtrl.js" charset="utf-8"></script>
     <script src="/views/about/aboutCtrl.js"></script>
     <script src="/views/shop/shopCtrl.js"></script>
