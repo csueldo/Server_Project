@@ -35,17 +35,17 @@
 }
 .cases-container{
     height: 269px;
-    width: 90%;
+    width: 100%;
     margin: 4.5em auto;
     /*outline: 1px solid blue;*/
 }
 
 .cases-photos{
-    height: 269px;
-    width: 269px;
-    float: left;
+    height: auto;
+    max-width: 23%;
+    display: inline-block;
     /*border: 1px solid red;*/
-    margin-left: 1em;
+    margin-left: 1.5%;
     position: relative;
 }
 .cases-wrap {
@@ -58,22 +58,22 @@
 }
 /*---------------------NG REPEAT DOCKS--------------------*/
 .docks-row-container{
-  height: 546px;
+  height: 536px;
   width: 100%;
   border-bottom: 2px solid #f1f1f2;
 }
 .docks-container{
   height: 368px;
-  width: 94%;
+  width: 100%;
   margin: 71px auto 0 auto;
   /*outline: 1px solid blue;*/
 }
 .docks-photos{
-    height: 368px;
-    width: 368px;
-    float: left;
+    height: auto;
+    max-width: 30%;
+    display: inline-block;
     /*border: 1px solid red;*/
-    margin-left: 1.8em;
+    margin-left: 2.4%;
     position: relative;
 }
 .docks-photos img {
@@ -82,22 +82,22 @@
 }
 /*-------------------NG REPEAT SPEAKERS -----------------*/
 .speakers-row-container{
-  height: 700px;
+  height: 680px;
   width: 100%;
   border-bottom: 2px solid #f1f1f2;
 }
 .speakers-container{
   height: 564px;
-  width: 96%;
-  margin: 71px auto 0 auto;
+  width: 100%;
+  margin: 0px auto 0 auto;
   /*outline: 1px solid blue;*/
 }
 .speakers-photos{
-    height: 564px;
-    width: 564px;
-    float: left;
+    height: auto;
+    max-width: 45%;
+    display: inline-block;
     /*border: 1px solid red;*/
-    margin-left: 1.8em;
+    margin-left: 3.3%;
     position: relative;
 }
 .speakers-photos img {
@@ -112,16 +112,16 @@
 }
 .stands-container{
   height: 368px;
-  width: 96%;
+  width: 100%;
   margin: 71px auto 0 auto;
   /*outline: 1px solid blue;*/
 }
 .stands-photos{
-    height: 368px;
-    width: 368px;
-    float: left;
+    height: auto;
+    max-width: 30%;
+    display: inline-block;
     /*border: 1px solid red;*/
-    margin-left: 1.8em;
+    margin-left: 2.6%;
     position: relative;
 }
 .stands-photos img {
@@ -136,16 +136,16 @@
 }
 .cups-container{
   height: 210px;
-  width: 96%;
+  width: 100%;
   margin: 71px auto 0 auto;
   /*outline: 1px solid blue;*/
 }
 .cups-photos{
-    height: 210px;
-    width: 210px;
-    float: left;
+    height: auto;
+    width: 17%;
+    display: inline-block;
     /*border: 1px solid red;*/
-    margin-left: 1.8em;
+    margin-left: 2.5%;
     position: relative;
 }
 .cups-photos img {
