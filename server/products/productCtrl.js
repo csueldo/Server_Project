@@ -20,6 +20,7 @@ module.exports = {
   } ,
   // Post Requests
   addProduct (req, res) {
+    console.log("hi from add product");
   new Product(req.body).save( (err, product) => {
     if (err) {
     return res.send(err);
@@ -33,7 +34,7 @@ module.exports = {
     if (!req.params.id) {
       return res.status(400).send("Navigate into object you want to edit");
     }
-    Products.findByIdAndUpdate(req.params.id, req.body, (err, response) => {
+    Product.findByIdAndUpdate(req.params.id, req.body, (err, response) => {
       if (err) {
         return res.send(err);
       }
@@ -48,7 +49,7 @@ module.exports = {
     if (!req.params.id) {
       return res.status(400).send("Navigate into object you want to delete")
     }
-    Products.findByIdAndRemove(req.params.id, req.body, (err, response) => {
+    Product.findByIdAndRemove(req.params.id, req.body, (err, response) => {
       if (err) {
         return res.send(err);
        }
