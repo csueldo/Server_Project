@@ -7,6 +7,16 @@ angular.module("myApp")
   $scope.speakers = speakers;
   $scope.stands = stands;
   $scope.cups = cups;
+
+  // $scope.getDarkCases = () => {
+  //   mainSvc.getDarkCases().then( response => {
+  //     $scope.darkCases = response.data;
+  //   } );
+  // }
+
+//   this.getDarkCases = () => {
+//     return $http.get( '/api/products' )
+//   }
 });
 
 var darkCases = [
