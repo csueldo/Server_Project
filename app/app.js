@@ -10,7 +10,7 @@ angular.module( "myApp", [ 'ui.router' ] )
   .state('shop', {
     url: '/shop' ,
     templateUrl: '../views/shop/shop.html' ,
-    controller: 'shopCtrl'
+    controller: 'productsCtrl'
   })
   .state('about', {
     url: '/about' ,
@@ -114,4 +114,8 @@ angular.module( "myApp", [ 'ui.router' ] )
     url:'/lamp-cup' ,
     templateUrl: '../views/product/cups/lamp-cup.html'
   })
-});
+})
+
+.constant("ref", {
+  url: "http://localhost:5000"
+})

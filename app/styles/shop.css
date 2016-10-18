@@ -22,21 +22,18 @@
 }
 
 .shop-main {
-    height: 3358px;
     width: 100%;
     background-color: white;
 }
 
 /*-----------------NG REPEAT CASES---------------------------*/
 .cases-row-container{
-  height: 440px;
   width: 100%;
   border-bottom: 2px solid #f1f1f2;
 }
 .cases-container{
-    height: 269px;
-    width: 100%;
-    margin: 4.5em auto;
+    max-width: 100%;
+    margin: 6em auto 9em auto;
     /*outline: 1px solid blue;*/
 }
 
@@ -58,14 +55,12 @@
 }
 /*---------------------NG REPEAT DOCKS--------------------*/
 .docks-row-container{
-  height: 536px;
   width: 100%;
   border-bottom: 2px solid #f1f1f2;
 }
 .docks-container{
-  height: 368px;
-  width: 100%;
-  margin: 71px auto 0 auto;
+  max-width: 100%;
+  margin: 6em auto 8em auto;
   /*outline: 1px solid blue;*/
 }
 .docks-photos{
@@ -82,22 +77,20 @@
 }
 /*-------------------NG REPEAT SPEAKERS -----------------*/
 .speakers-row-container{
-  height: 680px;
   width: 100%;
   border-bottom: 2px solid #f1f1f2;
 }
 .speakers-container{
-  height: 564px;
-  width: 100%;
-  margin: 0px auto 0 auto;
+  max-width: 100%;
+  margin: 0px auto 6.5em auto;
   /*outline: 1px solid blue;*/
 }
 .speakers-photos{
     height: auto;
-    max-width: 45%;
+    max-width: 48%;
     display: inline-block;
     /*border: 1px solid red;*/
-    margin-left: 3.3%;
+    margin-left: 1.3%;
     position: relative;
 }
 .speakers-photos img {
@@ -106,14 +99,12 @@
 }
 /*--------------------NG REPEAT Walnut STANDS------------------------------ */
 .stands-row-container{
-  height: 500px;
   width: 100%;
   border-bottom: 2px solid #f1f1f2;
 }
 .stands-container{
-  height: 368px;
-  width: 100%;
-  margin: 71px auto 0 auto;
+  max-width: 100%;
+  margin: 4em auto 8.7em auto;
   /*outline: 1px solid blue;*/
 }
 .stands-photos{
@@ -130,14 +121,12 @@
 }
 /*--------------------NG REPEAT ------------------------------ */
 .cups-row-container{
-  height: 386px;
   width: 100%;
   border-bottom: 2px solid #f1f1f2;
 }
 .cups-container{
-  height: 210px;
-  width: 100%;
-  margin: 71px auto 0 auto;
+  max-width: 100%;
+  margin: 7em auto 10.5em auto;
   /*outline: 1px solid blue;*/
 }
 .cups-photos{

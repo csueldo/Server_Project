@@ -8,6 +8,7 @@ const Product = mongoose.Schema(
     woodType: {type: String},
     image: {type: String} ,
     imageHover: {type: String} ,
+    ui: {type: String} ,
     quantity: {type: Number}
   }
 )

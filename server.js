@@ -16,9 +16,7 @@ app.use( session (sessionConfig) );
 
 mongoose.connect(mongoUri);
 mongoose.connection.once('open', ()=> {console.log(`Connected to mongo db at ${mongoUri}`)});
-
-
-
+//
 masterRoutes(app);
 
 app.listen( port, () => console.log( `Listening on port  ${ port }.`));
