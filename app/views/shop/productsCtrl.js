@@ -1,6 +1,5 @@
 angular.module("myApp")
 .controller("productsCtrl", function( $scope, productsService){
-  
 
   productsService.getProducts()
   .then( response =>{

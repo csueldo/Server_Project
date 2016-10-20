@@ -1,12 +1,8 @@
 .journalcover-jpg {
   background-image: url("/images/journal/journal-cover.jpg");
-  height: 400px;
-  width: 100%;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 100px;
 }
 
 .journal-title {
@@ -22,7 +18,6 @@
 }
 
 .journal-main {
-    height: 1400px;
     width: 100%;
     background-color: white;
 }
@@ -41,7 +36,7 @@
 .journal-slides {
     height: 1130px;
     width: 88%;
-    background-color: blue;
+    /*background-color: blue;*/
     margin: 0 auto;
     position: relative;
 }
@@ -52,7 +47,6 @@
   margin-bottom: 20px;
   margin-left: 5px;
   margin-right: 5px;
-  height: 360px;
   width: 360px;
 }
 
