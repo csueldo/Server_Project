@@ -54,5 +54,9 @@
   margin-right: 5px;
   height: 360px;
   width: 360px;
-  background-color: grey;
+}
+
+.journal-boxes img {
+  max-width: 100%;
+  height: auto;
 }

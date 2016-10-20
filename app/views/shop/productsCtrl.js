@@ -1,18 +1,25 @@
 angular.module("myApp")
 .controller("productsCtrl", function( $scope, productsService){
-
+  
 
   productsService.getProducts()
   .then( response =>{
     $scope.allProducts = response.data;
+    $scope.darkCases = [];
+    $scope.lightCases = [];
+    $scope.docks = [];
+    $scope.speakers = [];
+    $scope.stands = [];
+    $scope.cups = [];
     console.log($scope.allProducts);
 
+    //LOOPS THROUGH DATA AND SORTS DATA INTO Product ARRAYS AT BOTTOM-----
     for ( let i = 0; i < $scope.allProducts.length; i++) {
       for (var property in $scope.allProducts[i]){
         if ($scope.allProducts[i][property] === "Case") {
           for (var property in $scope.allProducts[i]){
             if ($scope.allProducts[i][property] === "Walnut") {
-              darkCases.push($scope.allProducts[i]);
+              $scope.darkCases.push($scope.allProducts[i]);
             }
           }
         }
@@ -23,7 +30,7 @@ angular.module("myApp")
         if ($scope.allProducts[i][property] === "Case") {
           for (var property in $scope.allProducts[i]){
             if ($scope.allProducts[i][property] === "Maple") {
-              lightCases.push($scope.allProducts[i]);
+              $scope.lightCases.push($scope.allProducts[i]);
             }
           }
         }
@@ -32,28 +39,28 @@ angular.module("myApp")
     for ( let i = 0; i < $scope.allProducts.length; i++) {
       for (var property in $scope.allProducts[i]){
         if ($scope.allProducts[i][property] === "Dock") {
-          docks.push($scope.allProducts[i]);
+          $scope.docks.push($scope.allProducts[i]);
         }
       }
     }
     for ( let i = 0; i < $scope.allProducts.length; i++) {
       for (var property in $scope.allProducts[i]){
         if ($scope.allProducts[i][property] === "Speakers") {
-          speakers.push($scope.allProducts[i]);
+          $scope.speakers.push($scope.allProducts[i]);
         }
       }
     }
     for ( let i = 0; i < $scope.allProducts.length; i++) {
       for (var property in $scope.allProducts[i]){
         if ($scope.allProducts[i][property] === "Stand") {
-          stands.push($scope.allProducts[i]);
+          $scope.stands.push($scope.allProducts[i]);
         }
       }
     }
     for ( let i = 0; i < $scope.allProducts.length; i++) {
       for (var property in $scope.allProducts[i]){
         if ($scope.allProducts[i][property] === "Cup") {
-          cups.push($scope.allProducts[i]);
+          $scope.cups.push($scope.allProducts[i]);
         }
       }
     }
@@ -61,16 +68,16 @@ angular.module("myApp")
     console.log(err);
     });
 
-  $scope.darkCases = darkCases;
-  $scope.lightCases = lightCases;
-  $scope.docks = docks;
-  $scope.speakers = speakers;
-  $scope.stands = stands;
-  $scope.cups = cups;
+  // $scope.darkCases = darkCases;
+  // $scope.lightCases = lightCases;
+  // $scope.docks = docks;
+  // $scope.speakers = speakers;
+  // $scope.stands = stands;
+  // $scope.cups = cups;
 
 });
 
-var darkCases = [
+// var darkCases = [
   // {
   //   "title": "iPhone Wallet Case" ,
   //   "price": "$129" ,
@@ -99,9 +106,9 @@ var darkCases = [
   //   "imageHover": "/images/shop/caseshover/1-caseshover4.jpg" ,
   //   "ui": "walnut-bumper" ,
   // }
-];
+// ];
 /*-------------------second row cases ---------*/
-var lightCases = [
+// var lightCases = [
   // {
   //   "title": "iPhone Wallet Case" ,
   //   "price": "$129" ,
@@ -130,9 +137,9 @@ var lightCases = [
   //   "imageHover": "/images/shop/caseshover/2-caseshover4.jpg" ,
   //   "ui":"maple-bumper" ,
   // }
-];
+// ];
 /*-------------------Docks---------------------*/
-var docks = [
+// var docks = [
   // {
   //   "title": "Walnut Dock" ,
   //   "price": "$99" ,
@@ -154,9 +161,9 @@ var docks = [
   //   "imageHover": "/images/shop/docks/1-dockshover3.jpg" ,
   //   "ui":"limited-dock" ,
   // }
-];
+// ];
 /*-------------------Speakers---------------------*/
-var speakers = [
+// var speakers = [
   // {
   //   "title": "Walnut Speakers & Amp" ,
   //   "price": "$599" ,
@@ -169,9 +176,9 @@ var speakers = [
   //   "image": "/images/shop/speakers/1-speakers2.jpg" ,
   //   "ui":"maple-speaker" ,
   // }
-];
+// ];
 /*-------------------Stands---------------------*/
-var stands = [
+// var stands = [
   // {
   //   "title": "Walnut Monitor Stand" ,
   //   "price": "$119" ,
@@ -193,9 +200,9 @@ var stands = [
   //   "imageHover": "/images/shop/stands/1-walnutstand-hover3.jpg" ,
   //   "ui":"walnut-laptop-stand" ,
   // }
-];
+// ];
 /*--------------------WALNUT CUPS ---------------------*/
-var cups = [
+// var cups = [
   // {
   //   "title": "Walnut Pen Cup" ,
   //   "price": "$139" ,
@@ -230,4 +237,4 @@ var cups = [
   //   "imageHover": "/images/shop/cups/1-cups5.jpg" ,
   //   "ui":"lamp-cup" ,
   // }
-];
+// ];
