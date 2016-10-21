@@ -24,6 +24,7 @@ angular.module( "myApp", [ 'ui.router' ] )
   .state('cart', {
     url: '/cart' ,
     templateUrl: '../views/cart/cart.html' ,
+    controller: 'cartCtrl'
   })
   /*------------product views ---------------*/
   .state('walnut-wallet', {

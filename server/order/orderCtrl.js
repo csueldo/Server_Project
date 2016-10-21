@@ -1,23 +1,13 @@
-const Order = require('./Order.js') ,
-  Product = require('../products/Product.js') ,
-  Cart = require('../cart/Cart.js') ,
+const Order = require('./Order.js');
 
 module.exports = {
 
   createOrder(req, res){
-    Cart.findById(req.params.cartId, (err, user) =>{
-      const newOrder = {
-        cart: cart._id ,
-        products: cart.products
-      };
-      new Order(newOrder).save((err, order) => {
+    Cart.findById(req.params.id, (err, cart) =>{
+      new Order(cart).save((err, order) => {
         if(err){
           return res.status(500).json(err);
         }else {
-          cart.products = [];
-          cart.save();
-          cart.orders.push(order._id);
-          cart.save();
           return res.status(200).json(order);
         }
       })
@@ -25,11 +15,11 @@ module.exports = {
   } ,
 
   getOrders(req, res) {
-    Order.find(req.Query), (err, orders) =>{
+    Order.find( {}, (err, orders) =>{
       if(err){
         return res.status(500).json(err);
       }
       return res.status(200).json(orders);
-    });
+    })
   }
 };

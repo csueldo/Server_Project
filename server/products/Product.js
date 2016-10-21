@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Product = mongoose.Schema(
+const Product = new mongoose.Schema(
   {
     title: {type: String, required: true} ,
     price: {type: Number, required: true} ,

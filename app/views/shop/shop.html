@@ -4,7 +4,7 @@
       SHOP
     </div>
   </div>
-  <main class="shop-main">
+  <main class="shop-main" ng->
     <!--                NG_REPEAT DARK CASES PODUCTS ROW 1   -->
   <div class="cases-row-container">
     <div class="cases-container">
@@ -19,7 +19,7 @@
           ui-sref="{{darkCase.ui}}"alt=""
           />
             <h4>{{darkCase.title}}</h4>
-            <div class="hidden-add-word" ui-sref="{{darkCase.ui}}">{{darkCase.price}} | <button>ADD TO CART</button</div>
+            <div class="hidden-add-word" ng-click="addToCart(darkCase)">${{darkCase.price}} | ADD TO CART</div>
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@
           ui-sref="{{lightCase.ui}}" alt=""
           />
             <h4>{{lightCase.title}}</h4>
-            <div class="hidden-add-word" ui-sref="{{lightCase.ui}}">{{lightCase.price}} | ADD TO CART</div>
+            <div class="hidden-add-word" ng-click="addToCart(lightCase)">${{lightCase.price}} | ADD TO CART</div>
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@
           ui-sref="{{dock.ui}}"
           />
             <h4>{{dock.title}}</h4>
-            <div class="hidden-add-word" ui-sref="{{dock.ui}}">{{dock.price}} | ADD TO CART</div>
+            <div class="hidden-add-word" ng-click="addToCart(dock)">${{dock.price}} | ADD TO CART</div>
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
           ui-sref="{{speaker.ui}}"
           />
             <h4 style="margin-top: 0px">{{speaker.title}}</h4>
-            <div class="hidden-add-word" ui-sref="{{speaker.ui}}">{{speaker.price}} | ADD TO CART</div>
+            <div class="hidden-add-word" ng-click="addToCart(speaker)">${{speaker.price}} | ADD TO CART</div>
           </div>
         </div>
       </div>
@@ -99,7 +99,7 @@
           ui-sref="{{stand.ui}}"
           />
             <h4>{{stand.title}}</h4>
-            <div class="hidden-add-word" ui-sref="{{stand.ui}}">{{stand.price}} | ADD TO CART</div>
+            <div class="hidden-add-word" ng-click="addToCart(stand)">${{stand.price}} | ADD TO CART</div>
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@
           ui-sref="{{cup.ui}}"
           />
             <h4>{{cup.title}}</h4>
-            <div class="hidden-add-word" ui-sref="{{cup.ui}}">{{cup.price}} | ADD TO CART</div>
+            <div class="hidden-add-word" ng-click="addToCart(cup)">${{cup.price}} | ADD TO CART</div>
           </div>
         </div>
       </div>

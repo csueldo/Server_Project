@@ -11,12 +11,27 @@ module.exports = {
         return res.status(200).json(cart);
     })
   } ,
+  //put
   addToCart(req, res){
-    Cart.findByIdAndUpdate(req.params.id, req.body, (err, updatedCart)=>{
-      if(err){
-        return res.status(500).json(error);
+    Cart.findById(req.params.id, function( err, cart ) {
+      if(err) { return res.json(err)}
+      else {
+        cart.products.push( req.body );
+        cart.save( function( error, cartYo ) {
+          if(error) {return res.status(500).json(error)}
+          else{return res.status( 200 ).json( cartYo );}
+        } );
       }
-      return res.status(200).json(updatedCart);
     })
+  } ,
+  //Get items in cart
+  getCart(req, res){
+  Cart.findById(req.params.id, function(err, cart){
+    if(err){
+      return res.json(err);
+    }
+    return res.status(200).json(cart);
+  })
   }
+
 };

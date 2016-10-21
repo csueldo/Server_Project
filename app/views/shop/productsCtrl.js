@@ -1,6 +1,13 @@
 angular.module("myApp")
-.controller("productsCtrl", function( $scope, productsService){
+.controller("productsCtrl", function( $scope, productsService, cartService){
 
+  $scope.addToCart = function(product){
+
+    cartService.addToCart(product)
+    .then(function(response){
+      console.log(response);
+    })
+  };
   productsService.getProducts()
   .then( response =>{
     $scope.allProducts = response.data;
