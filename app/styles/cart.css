@@ -3,6 +3,10 @@
   width: 100%;
   background-color: #424242;
 }
+.cart-title{
+  font-size: 20px;
+  margin-left: 90px;
+}
 .cart-main{
   width: 100%;
   background-color: white;
@@ -15,12 +19,24 @@
 }
 
 .cart-container{
-  height: 200px;
-  max-width: 70%;
+  height: 205px;
+  max-width: 60%;
   margin: 0 auto 0 auto;
   position: relative;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
   /*background-color: black;*/
+}
+.total-cart{
+  font-size: 25px;
+  height: 100px;
+  max-width: 60%;
+  padding-top: 40px;
+  padding-left: 500px;
+  margin: 0 auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 .cart-image-container {
   overflow: hidden;
@@ -28,20 +44,22 @@
   display: inline-block;
   height: 200px;
   width: 200px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   /*background-color: red;*/
 }
 .cart-info-container{
+    font-size: 20px;
     padding-top: 90px;
     text-align: center;
     overflow: hidden;
     display: inline-block;
     height: 200px;
     width: 200px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     /*background-color: yellow;*/
 }
 .cart-price{
+  font-size: 20px;
   padding-top: 90px;
   text-align: center;
   overflow: hidden;
@@ -49,7 +67,7 @@
   height: 200px;
   width: 200px;
   margin-left: 100px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   /*background-color: grey;*/
 }
 

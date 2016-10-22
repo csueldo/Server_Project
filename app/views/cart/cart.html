@@ -1,8 +1,8 @@
 <div class="blank-header">
 </div>
 <header class="cart-header">
-  <div>
-    <h4>Cart</h4>
+  <div class="cart-title">
+    <h4>Your Cart</h4>
   </div>
 </header>
     <div class="cart-container" ng-repeat="product in products">
@@ -18,4 +18,7 @@
 
           ${{product.price}}
         </div>
+    </div>
+    <div class="total-cart">
+      <div>Total: <span style="margin-left: 30px">${{total}}</span></div>
     </div>
