@@ -11,6 +11,7 @@ p {
     background-attachment: fixed;
     background-repeat: no-repeat;
     padding-top: 100px;
+    background-position-y: -67px;
 }
 
 .about-title {
